@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/register.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+</head>
+
+<body>
+   
+    <section class="vh-1020" style="background-color: #0d9073;">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-17 col-md-8 col-lg-6 col-xl-5">
+              <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+      
+                  <h3 class="mb-5">New user's welcome</h3>
+      
+                  <div class="form-outline mb-4">
+                    <label class="form-label" for="name">Name</label>
+                    <input type="name" id="name" required name="name" class="form-control" />
+                </div>
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="email">DOB</label>
+                    <input type="date" id="dob" required placeholder="dd-mm-yyyy" name="dob"
+                        class="form-control" />
+                </div>
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="email">Email address</label>
+                    <input type="email"
+                        pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+                        required id="email" required name="email" class="form-control" />
+                </div>
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="mobile">Mobile</label>
+                    <input type="number" id="mobile" required name="mobile" class="form-control" />
+                </div>
+
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="pass">Password</label>
+                    <input type="password" id="pass" required name="pass" class="form-control" />
+                </div>
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="conpass">Confirm Password</label>
+                    <input type="password" id="conpass" required name="conpass" class="form-control" />
+                </div>
+                  <button type="button" class="btn btn-secondary btn-block mb-4" onclick="reguser()">Sign
+                    up</button>
+                <div class="text-center">
+                    <p>Already a member? <a href="login.html">Login</a></p>
+                </div>
+                  <hr class="my-4">
+      
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</body>
+
+</html>
